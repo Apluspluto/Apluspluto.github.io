@@ -1,0 +1,62 @@
+/*** For All ***/
+
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*** Tete de page **/
+
+.header_logo {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 20px;
+}
+
+.header_location {
+   display: flex;
+   justify-content: center;
+   background-color: #EAEAEA;
+   box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.3);
+   margin-top: 10px;
+}
+
+.fa-location-dot {
+    margin-top: 16px;
+    margin-right: 10px;
+}
+
+/*** Réservation ***/
+
+.resa {
+    margin-top: 4px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 18em;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding-top: 15px;
+    font-size: larger;
+}
+
+.resa_para {
+    margin: 0px;
+}
+
+.resa_btn {
+    border: 1px solid whitesmoke;
+    border-radius: 30px;
+    background: linear-gradient(1deg, #9356DC, #FF79DA);
+    width: 70%;
+    padding: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+}
+/*** Fonctionnement ***/
+
