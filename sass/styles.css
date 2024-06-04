@@ -1,0 +1,85 @@
+/*** All ***/
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+/*** Head **/
+Header .header__logo {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 20px;
+}
+Header .header__location {
+  display: flex;
+  justify-content: center;
+  background-color: #EAEAEA;
+  box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+}
+Header .fa-location-dot {
+  margin-top: 16px;
+  margin-right: 10px;
+}
+
+/**** Premiere section ***/
+.resa {
+  margin-top: 4px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 18em;
+  justify-content: center;
+  background-color: whitesmoke;
+  padding-top: 15px;
+  font-size: larger;
+}
+.resa .resa__para {
+  margin: 0px;
+}
+.resa .resa__btn {
+  border-radius: 30px;
+  background: linear-gradient(1deg, #9356DC, #FF79DA);
+  width: 70%;
+  padding: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-bottom: 45px;
+  font-size: large;
+  color: white;
+  text-decoration: none;
+  filter: drop-shadow(1px 1px 5px grey);
+}
+
+/*** Fonctionnement ***/
+.fonction__titre {
+  margin-left: 15px;
+}
+
+.fonction__une {
+  display: flex;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  width: 85%;
+  padding: 20px;
+  margin-top: 50px;
+  padding-left: 0;
+  margin-left: 25px;
+  align-items: baseline;
+  justify-content: space-around;
+}
+.fonction__une .fonction__icone {
+  padding: 4px;
+  padding-left: 9px;
+  padding-right: 9px;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  display: flex;
+  color: white;
+  background-color: #9356DC;
+}
+.fonction__une .fonction__para {
+  padding: 0px;
+}/*# sourceMappingURL=styles.css.map */
