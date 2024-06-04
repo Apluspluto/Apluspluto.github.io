@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="sass/styles.css">
     <title>Accueil</title>
     <script src="https://kit.fontawesome.com/bb9207dd24.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,8 @@
 </head>
 <body>
     <header>
-        <img class="header_logo" src="assets/images/logo/ohmyfood.png" alt="Logo du site">
-        <div class="header_location">
+        <img class="header__logo" src="assets/images/logo/ohmyfood.png" alt="Logo du site">
+        <div class="header__location">
         <i class="fa-solid fa-location-dot"></i>
         <p>Paris, Bellevile</p>
         </div>
@@ -22,11 +22,20 @@
         <section>
             <div class="resa">
             <h1>Réservez le menu qui vous convient</h1>
-            <p class="resa_para">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-            <a href="#" class="resa_btn">Explorer nos restaurants</a>
+            <p class="resa__para">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+            <a href="#" class="resa__btn">Explorer nos restaurants</a>
             </div>
         </section>
-
+        <section class="Fonction">
+            <h1 class="fonction__titre">Fonctionnement</h1>
+            <div class="fonction__container">
+            <div class="fonction__une">
+            <p class="fonction__icone">1</p>
+            <i class="fa-solid fa-tablet-screen-button"></i>
+            <p class="fonction__para">Choisissez un restaurant</p>
+            </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
