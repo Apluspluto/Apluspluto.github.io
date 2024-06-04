@@ -73,11 +73,12 @@ Header {
         background-color: whitesmoke;
         width: 85%;
         padding: 20px;
-        margin-top: 50px;
+        margin-top: 35px;
         padding-left: 0;
         margin-left: 25px;
         align-items: baseline;
         justify-content: space-around;
+        filter: drop-shadow(1px 1px 5px lightgrey);
     
     .fonction__icone {
         padding: 4px;
@@ -85,13 +86,99 @@ Header {
         padding-right: 9px;
         border-radius: 50%;
         position: absolute;
-        left: 10px;
+        left: -13px;
         display: flex;
         color: white;
         background-color: #9356DC;
     }
 
-    .fonction__para {
-        padding: 0px;
+    .fa-tablet-screen-button {
+        font-size: x-large;
+        color: grey;
     }
+    .fa-tablet-screen-button:hover {
+        color: #9356DC;
+    }
+
+    .fonction__para {
+        padding-right: 70px;
+    }
+}
+
+.fonction__deux {
+    display: flex;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    width: 85%;
+    padding: 20px;
+    margin-top: 50px;
+    padding-left: 0;
+    margin-left: 25px;
+    align-items: baseline;
+    justify-content: space-around;
+    filter: drop-shadow(1px 1px 5px lightgrey);
+    
+    .fonction__icone {
+        padding: 4px;
+        padding-left: 9px;
+        padding-right: 9px;
+        border-radius: 50%;
+        position: absolute;
+        left: -13px;
+        display: flex;
+        color: white;
+        background-color: #9356DC;
+    }
+
+    .fa-list {
+        font-size: x-large;
+        color: grey;
+    }
+    .fa-list:hover {
+        color: #9356DC;
+    }
+
+    .fonction__para {
+        padding-right: 70px;
+    }
+
+}
+
+.fonction__trois {
+    display: flex;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    width: 85%;
+    padding: 20px;
+    margin-top: 50px;
+    padding-left: 0;
+    margin-left: 25px;
+    align-items: baseline;
+    justify-content: space-around;
+    filter: drop-shadow(1px 1px 5px lightgrey);
+    
+    .fonction__icone {
+        padding: 4px;
+        padding-left: 9px;
+        padding-right: 9px;
+        border-radius: 50%;
+        position: absolute;
+        left: -13px;
+        display: flex;
+        color: white;
+        background-color: #9356DC;
+    }
+
+    .fa-store{
+        font-size: x-large;
+        color: grey;
+    }
+    .fa-store:hover {
+        color: #9356DC;
+    }
+
+    .fonction__para {
+        padding-right: 70px;
+    }
+
 }

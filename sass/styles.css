@@ -63,11 +63,12 @@ Header .fa-location-dot {
   background-color: whitesmoke;
   width: 85%;
   padding: 20px;
-  margin-top: 50px;
+  margin-top: 35px;
   padding-left: 0;
   margin-left: 25px;
   align-items: baseline;
   justify-content: space-around;
+  filter: drop-shadow(1px 1px 5px lightgrey);
 }
 .fonction__une .fonction__icone {
   padding: 4px;
@@ -75,11 +76,88 @@ Header .fa-location-dot {
   padding-right: 9px;
   border-radius: 50%;
   position: absolute;
-  left: 10px;
+  left: -13px;
   display: flex;
   color: white;
   background-color: #9356DC;
 }
+.fonction__une .fa-tablet-screen-button {
+  font-size: x-large;
+  color: grey;
+}
+.fonction__une .fa-tablet-screen-button:hover {
+  color: #9356DC;
+}
 .fonction__une .fonction__para {
-  padding: 0px;
+  padding-right: 70px;
+}
+
+.fonction__deux {
+  display: flex;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  width: 85%;
+  padding: 20px;
+  margin-top: 50px;
+  padding-left: 0;
+  margin-left: 25px;
+  align-items: baseline;
+  justify-content: space-around;
+  filter: drop-shadow(1px 1px 5px lightgrey);
+}
+.fonction__deux .fonction__icone {
+  padding: 4px;
+  padding-left: 9px;
+  padding-right: 9px;
+  border-radius: 50%;
+  position: absolute;
+  left: -13px;
+  display: flex;
+  color: white;
+  background-color: #9356DC;
+}
+.fonction__deux .fa-list {
+  font-size: x-large;
+  color: grey;
+}
+.fonction__deux .fa-list:hover {
+  color: #9356DC;
+}
+.fonction__deux .fonction__para {
+  padding-right: 70px;
+}
+
+.fonction__trois {
+  display: flex;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  width: 85%;
+  padding: 20px;
+  margin-top: 50px;
+  padding-left: 0;
+  margin-left: 25px;
+  align-items: baseline;
+  justify-content: space-around;
+  filter: drop-shadow(1px 1px 5px lightgrey);
+}
+.fonction__trois .fonction__icone {
+  padding: 4px;
+  padding-left: 9px;
+  padding-right: 9px;
+  border-radius: 50%;
+  position: absolute;
+  left: -13px;
+  display: flex;
+  color: white;
+  background-color: #9356DC;
+}
+.fonction__trois .fa-store {
+  font-size: x-large;
+  color: grey;
+}
+.fonction__trois .fa-store:hover {
+  color: #9356DC;
+}
+.fonction__trois .fonction__para {
+  padding-right: 70px;
 }/*# sourceMappingURL=styles.css.map */
