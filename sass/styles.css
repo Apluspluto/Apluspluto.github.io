@@ -31,7 +31,7 @@ Header .fa-location-dot {
   justify-content: center;
   background-color: whitesmoke;
   padding-top: 15px;
-  font-size: larger;
+  font-size: x-large;
 }
 .resa .resa__para {
   margin: 0px;
@@ -53,11 +53,10 @@ Header .fa-location-dot {
 }
 
 /*** Fonctionnement ***/
-.fonction__titre {
+.fonction .fonction__titre {
   margin-left: 15px;
 }
-
-.fonction__une {
+.fonction .fonction__etapes {
   display: flex;
   border-radius: 20px;
   background-color: whitesmoke;
@@ -70,7 +69,7 @@ Header .fa-location-dot {
   justify-content: space-around;
   filter: drop-shadow(1px 1px 5px lightgrey);
 }
-.fonction__une .fonction__icone {
+.fonction .fonction__etapes .fonction__icone {
   padding: 4px;
   padding-left: 9px;
   padding-right: 9px;
@@ -81,84 +80,31 @@ Header .fa-location-dot {
   color: white;
   background-color: #9356DC;
 }
-.fonction__une .fa-tablet-screen-button {
+.fonction .fonction__etapes .fa-tablet-screen-button {
   font-size: x-large;
   color: grey;
 }
-.fonction__une .fa-tablet-screen-button:hover {
+.fonction .fonction__etapes .fa-tablet-screen-button:hover {
   color: #9356DC;
 }
-.fonction__une .fonction__para {
+.fonction .fonction__etapes .fonction__para {
   padding-right: 70px;
 }
-
-.fonction__deux {
-  display: flex;
-  border-radius: 20px;
-  background-color: whitesmoke;
-  width: 85%;
-  padding: 20px;
-  margin-top: 50px;
-  padding-left: 0;
-  margin-left: 25px;
-  align-items: baseline;
-  justify-content: space-around;
-  filter: drop-shadow(1px 1px 5px lightgrey);
-}
-.fonction__deux .fonction__icone {
-  padding: 4px;
-  padding-left: 9px;
-  padding-right: 9px;
-  border-radius: 50%;
-  position: absolute;
-  left: -13px;
-  display: flex;
-  color: white;
-  background-color: #9356DC;
-}
-.fonction__deux .fa-list {
+.fonction .fa-list {
   font-size: x-large;
   color: grey;
 }
-.fonction__deux .fa-list:hover {
+.fonction .fa-list:hover {
   color: #9356DC;
 }
-.fonction__deux .fonction__para {
-  padding-right: 70px;
-}
-
-.fonction__trois {
-  display: flex;
-  border-radius: 20px;
-  background-color: whitesmoke;
-  width: 85%;
-  padding: 20px;
-  margin-top: 50px;
-  padding-left: 0;
-  margin-left: 25px;
-  align-items: baseline;
-  justify-content: space-around;
-  filter: drop-shadow(1px 1px 5px lightgrey);
-}
-.fonction__trois .fonction__icone {
-  padding: 4px;
-  padding-left: 9px;
-  padding-right: 9px;
-  border-radius: 50%;
-  position: absolute;
-  left: -13px;
-  display: flex;
-  color: white;
-  background-color: #9356DC;
-}
-.fonction__trois .fa-store {
+.fonction .fa-store {
   font-size: x-large;
   color: grey;
 }
-.fonction__trois .fa-store:hover {
+.fonction .fa-store:hover {
   color: #9356DC;
 }
-.fonction__trois .fonction__para {
+.fonction .fonction__para {
   padding-right: 70px;
 }
 
@@ -166,6 +112,7 @@ Header .fa-location-dot {
 .resto {
   margin-top: 50px;
   background-color: whitesmoke;
+  padding-bottom: 80px;
 }
 .resto .resto__titre {
   padding-top: 50px;
@@ -177,12 +124,16 @@ Header .fa-location-dot {
   gap: 50px;
   justify-items: center;
 }
-.resto .resto__container .resto__card1 {
+.resto .resto__container .resto__liens {
+  color: inherit;
+  text-decoration: none;
+}
+.resto .resto__container .resto__cards {
   background-color: white;
   border-radius: 20px;
   width: 88%;
 }
-.resto .resto__container .resto__card1 .resto__para1 {
+.resto .resto__container .resto__cards .resto__para1 {
   position: absolute;
   display: flex;
   color: #008766;
@@ -191,7 +142,7 @@ Header .fa-location-dot {
   background-color: #99E2D0;
   padding: 4px;
 }
-.resto .resto__container .resto__card1 .resto__cardimg {
+.resto .resto__container .resto__cards .resto__img {
   -o-object-fit: cover;
      object-fit: cover;
   border-top-left-radius: 20px;
@@ -199,28 +150,54 @@ Header .fa-location-dot {
   height: 200px;
   width: 100%;
 }
-.resto .resto__container .resto__card1 .resto__minicontainer {
+.resto .resto__container .resto__cards .resto__minicontainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.resto .resto__container .resto__card1 .resto__minicontainer .resto__titreandpara {
+.resto .resto__container .resto__cards .resto__minicontainer .resto__titreandpara {
   padding-left: 30px;
 }
-.resto .resto__container .resto__card1 .resto__minicontainer .resto__titreandpara .resto__titre2 {
+.resto .resto__container .resto__cards .resto__minicontainer .resto__titreandpara .resto__titre2 {
   margin: 0;
   margin-top: 20px;
   margin-bottom: 5px;
 }
-.resto .resto__container .resto__card1 .resto__minicontainer .resto__titreandpara .resto__para2 {
+.resto .resto__container .resto__cards .resto__minicontainer .resto__titreandpara .resto__para2 {
   margin: 0;
   margin-bottom: 10px;
 }
-.resto .resto__container .resto__card1 .resto__minicontainer h2 + p {
+.resto .resto__container .resto__cards .resto__minicontainer h2 + p {
   padding-bottom: 10px;
   font-weight: 300;
 }
-.resto .resto__container .resto__card1 .resto__minicontainer .resto__icone {
+.resto .resto__container .resto__cards .resto__minicontainer .resto__icone {
   font-size: 20px;
   padding-right: 40px;
+}
+
+/*** Footer ***/
+footer {
+  background-color: #353535;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+footer img {
+  width: 20%;
+  padding-top: 15px;
+  padding-left: 37px;
+  filter: invert(1) brightness(2);
+}
+footer ul {
+  list-style-type: none;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+footer ul .fa-utensils {
+  padding-right: 17px;
+}
+footer ul .fa-handshake-angle {
+  padding-right: 10px;
 }/*# sourceMappingURL=styles.css.map */
