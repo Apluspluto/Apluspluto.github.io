@@ -160,4 +160,67 @@ Header .fa-location-dot {
 }
 .fonction__trois .fonction__para {
   padding-right: 70px;
+}
+
+/*** Restaurants ***/
+.resto {
+  margin-top: 50px;
+  background-color: whitesmoke;
+}
+.resto .resto__titre {
+  padding-top: 50px;
+  padding-left: 15px;
+}
+.resto .resto__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  justify-items: center;
+}
+.resto .resto__container .resto__card1 {
+  background-color: white;
+  border-radius: 20px;
+  width: 88%;
+}
+.resto .resto__container .resto__card1 .resto__para1 {
+  position: absolute;
+  display: flex;
+  color: #008766;
+  right: 60px;
+  border-radius: 3px;
+  background-color: #99E2D0;
+  padding: 4px;
+}
+.resto .resto__container .resto__card1 .resto__cardimg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 200px;
+  width: 100%;
+}
+.resto .resto__container .resto__card1 .resto__minicontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.resto .resto__container .resto__card1 .resto__minicontainer .resto__titreandpara {
+  padding-left: 30px;
+}
+.resto .resto__container .resto__card1 .resto__minicontainer .resto__titreandpara .resto__titre2 {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.resto .resto__container .resto__card1 .resto__minicontainer .resto__titreandpara .resto__para2 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+.resto .resto__container .resto__card1 .resto__minicontainer h2 + p {
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+.resto .resto__container .resto__card1 .resto__minicontainer .resto__icone {
+  font-size: 20px;
+  padding-right: 40px;
 }/*# sourceMappingURL=styles.css.map */
