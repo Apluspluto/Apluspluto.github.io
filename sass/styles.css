@@ -84,9 +84,6 @@ Header .fa-location-dot {
   font-size: x-large;
   color: grey;
 }
-.fonction .fonction__etapes .fa-tablet-screen-button:hover {
-  color: #9356DC;
-}
 .fonction .fonction__etapes .fonction__para {
   padding-right: 70px;
 }
@@ -94,15 +91,9 @@ Header .fa-location-dot {
   font-size: x-large;
   color: grey;
 }
-.fonction .fa-list:hover {
-  color: #9356DC;
-}
 .fonction .fa-store {
   font-size: x-large;
   color: grey;
-}
-.fonction .fa-store:hover {
-  color: #9356DC;
 }
 .fonction .fonction__para {
   padding-right: 70px;
