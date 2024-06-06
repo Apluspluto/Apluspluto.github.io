@@ -133,7 +133,7 @@ Header .fa-location-dot {
   border-radius: 20px;
   width: 88%;
 }
-.resto .resto__container .resto__cards .resto__para1 {
+.resto .resto__container .resto__cards .resto__new {
   position: absolute;
   display: flex;
   color: #008766;
@@ -155,19 +155,17 @@ Header .fa-location-dot {
   justify-content: space-between;
   align-items: center;
 }
-.resto .resto__container .resto__cards .resto__minicontainer .resto__titreandpara {
+.resto .resto__container .resto__cards .resto__minicontainer .resto__description {
   padding-left: 30px;
 }
-.resto .resto__container .resto__cards .resto__minicontainer .resto__titreandpara .resto__titre2 {
+.resto .resto__container .resto__cards .resto__minicontainer .resto__description .resto__soustitre {
   margin: 0;
   margin-top: 20px;
   margin-bottom: 5px;
 }
-.resto .resto__container .resto__cards .resto__minicontainer .resto__titreandpara .resto__para2 {
+.resto .resto__container .resto__cards .resto__minicontainer .resto__description .resto__para {
   margin: 0;
   margin-bottom: 10px;
-}
-.resto .resto__container .resto__cards .resto__minicontainer h2 + p {
   padding-bottom: 10px;
   font-weight: 300;
 }

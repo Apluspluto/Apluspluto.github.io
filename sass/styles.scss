@@ -5,7 +5,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-
 /*** Head **/
 
 Header {
@@ -160,7 +159,7 @@ Header {
         border-radius: 20px;
         width: 88%;
 
-        .resto__para1 {
+        .resto__new {
             position: absolute;
             display: flex;
             color: #008766;
@@ -183,24 +182,21 @@ Header {
             justify-content: space-between;
             align-items: center;
             
-        .resto__titreandpara {
+        .resto__description {
             padding-left: 30px;
 
-            .resto__titre2 {
+            .resto__soustitre {
                 margin: 0;
                 margin-top: 20px;
                 margin-bottom: 5px;
             }
 
-            .resto__para2 {
+            .resto__para {
                 margin: 0;
                 margin-bottom: 10px;
+                padding-bottom: 10px;
+                font-weight: 300;
             }
-        }
-
-        h2 + p {
-            padding-bottom: 10px;
-            font-weight: 300;
         }
 
         .resto__icone {
