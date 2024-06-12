@@ -5,10 +5,13 @@ body {
 }
 
 /*** Head **/
-Header .header__logo {
-  width: 50%;
-  margin-left: 25%;
-  margin-top: 20px;
+Header .header__container {
+  display: flex;
+  justify-content: center;
+}
+Header .header__container .header__logo {
+  padding-top: 15px;
+  width: 200px;
 }
 Header .header__location {
   display: flex;
@@ -22,6 +25,11 @@ Header .fa-location-dot {
   margin-right: 10px;
 }
 
+@media (min-width: 767px) {
+  header .header__location {
+    box-shadow: none;
+  }
+}
 /**** Premiere section ***/
 .resa {
   margin-top: 4px;
@@ -56,6 +64,15 @@ Header .fa-location-dot {
   filter: drop-shadow(2px 2px 6px black);
 }
 
+@media (min-width: 767px) {
+  .resa {
+    margin-top: 0px;
+    grid-template-columns: none;
+  }
+  .resa .resa__btn {
+    width: 40%;
+  }
+}
 /*** Fonctionnement ***/
 .fonction .fonction__titre {
   margin-left: 15px;
@@ -74,7 +91,7 @@ Header .fa-location-dot {
   margin-left: 25px;
   margin-right: 30px;
   align-items: baseline;
-  justify-content: space-around;
+  justify-content: space-evenly;
   filter: drop-shadow(1px 1px 5px lightgrey);
 }
 .fonction .fonction__etapes .fonction__icone {
@@ -117,6 +134,58 @@ Header .fa-location-dot {
   color: #9356DC;
 }
 
+@media (min-width: 767px) {
+  .fonction .fonction__container {
+    grid-template-columns: 1fr 1fr 1Fr;
+  }
+  .fonction .fonction__etapes {
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  .fonction .fonction__etapes .fonction__icone {
+    padding: 2px;
+    padding-right: 7px;
+    padding-left: 7px;
+    top: 4px;
+    left: -14px;
+  }
+  .fonction .fonction__etapes .fa-tablet-screen-button {
+    font-size: larger;
+    padding-left: 5px;
+  }
+  .fonction .fonction__etapes .fa-list {
+    font-size: larger;
+    padding-left: 5px;
+  }
+  .fonction .fonction__etapes .fa-store {
+    font-size: larger;
+    padding-left: 5px;
+  }
+  .fonction .fonction__etapes .fonction__para {
+    display: contents;
+    font-size: smaller;
+  }
+}
+@media (min-width: 1024px) {
+  .fonction {
+    margin: 50px;
+  }
+  .fonction .fonction__etapes .fa-tablet-screen-button {
+    padding-left: 10px;
+    font-size: x-large;
+  }
+  .fonction .fonction__etapes .fa-list {
+    padding-left: 10px;
+    font-size: x-large;
+  }
+  .fonction .fonction__etapes .fa-store {
+    padding-left: 10px;
+    font-size: x-large;
+  }
+  .fonction .fonction__etapes .fonction__para {
+    font-size: medium;
+  }
+}
 /*** Restaurants ***/
 .resto {
   margin-top: 50px;
@@ -216,28 +285,59 @@ Header .fa-location-dot {
   padding-right: 40px;
 }
 
+@media (min-width: 767px) {
+  .resto .resto__container {
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .resto {
+    padding: 70px;
+    padding-top: 0px;
+  }
+}
 /*** Footer ***/
 footer {
   background-color: #353535;
   padding-top: 1px;
   padding-bottom: 1px;
 }
-footer img {
-  width: 20%;
+footer .footer__container img {
+  width: 100px;
   padding-top: 15px;
   padding-left: 37px;
   filter: invert(1) brightness(2);
 }
-footer ul {
+footer .footer__container ul {
   list-style-type: none;
   color: white;
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
 }
-footer ul .fa-utensils {
+footer .footer__container ul .fa-utensils {
   padding-right: 17px;
 }
-footer ul .fa-handshake-angle {
+footer .footer__container ul .fa-handshake-angle {
   padding-right: 10px;
+}
+
+@media (min-width: 767px) {
+  footer {
+    padding-top: 129px;
+  }
+  footer .footer__container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  footer .footer__container img {
+    width: 100px;
+    height: 20px;
+    padding-right: 30px;
+  }
+  footer .footer__container ul {
+    display: flex;
+  }
 }/*# sourceMappingURL=styles.css.map */
