@@ -48,7 +48,7 @@ Header .header__container .header__logo {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   margin-top: -40px;
-  height: 175%;
+  height: 190%;
   width: 100%;
   /***** Menu ****/
 }
@@ -237,7 +237,7 @@ footer {
   padding-top: 1px;
   padding-bottom: 1px;
   position: relative;
-  top: 80em;
+  top: 87em;
 }
 footer .footer__container img {
   width: 100px;
