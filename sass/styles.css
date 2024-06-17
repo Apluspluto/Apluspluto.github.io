@@ -4,7 +4,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/*** Head **/
+/*** Header **/
 Header .header__container {
   display: flex;
   justify-content: center;
@@ -58,10 +58,25 @@ Header .fa-location-dot {
   color: white;
   text-decoration: none;
   filter: drop-shadow(1px 1px 5px grey);
-  transition: filter 1s ease;
+  transition: filter 0.8s ease;
+}
+.resa .resa__btn::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: -5%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+  transition: all 0.8s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+.resa .resa__btn:hover::before {
+  opacity: 1;
 }
 .resa .resa__btn:hover {
-  filter: drop-shadow(2px 2px 6px black);
+  filter: drop-shadow(1px 1px 5px black);
 }
 
 @media (min-width: 767px) {
@@ -216,6 +231,8 @@ Header .fa-location-dot {
   font-size: 20px;
   position: absolute;
   right: 10px;
+  padding-right: 30px;
+  padding-top: 10px;
   transition: opacity 0.3s;
 }
 .resto .resto__container .icon-container .icon-1 {
@@ -224,10 +241,10 @@ Header .fa-location-dot {
 .resto .resto__container .icon-container .icon-2 {
   opacity: 0;
 }
-.resto .resto__container .icon-container .icon-change:checked ~ .icon-1 {
+.resto .resto__container .icon-container .icon-1:hover {
   opacity: 0;
 }
-.resto .resto__container .icon-container .icon-change:checked ~ .icon-2 {
+.resto .resto__container .icon-container .icon-2:hover {
   opacity: 1;
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
@@ -280,10 +297,6 @@ Header .fa-location-dot {
   padding-bottom: 10px;
   font-weight: 300;
 }
-.resto .resto__container .resto__cards .resto__minicontainer .resto__icone {
-  font-size: 20px;
-  padding-right: 40px;
-}
 
 @media (min-width: 767px) {
   .resto .resto__container {
@@ -322,6 +335,13 @@ footer .footer__container ul .fa-utensils {
 }
 footer .footer__container ul .fa-handshake-angle {
   padding-right: 10px;
+}
+footer .footer__container ul .footer__liste {
+  font-weight: 300;
+}
+footer .footer__container ul a {
+  color: inherit;
+  text-decoration: none;
 }
 
 @media (min-width: 767px) {
