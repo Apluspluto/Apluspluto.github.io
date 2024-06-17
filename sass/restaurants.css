@@ -1,1 +1,285 @@
-/*# sourceMappingURL=restaurants.css.map */
+/*** Body ***/
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+/*** Header **/
+Header .header__arrow {
+  color: inherit;
+}
+Header .fa-arrow-left {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  font-size: x-large;
+}
+Header .header__container {
+  display: flex;
+  justify-content: center;
+}
+Header .header__container .header__logo {
+  padding-top: 15px;
+  width: 200px;
+}
+
+/*** Image et contenus ***/
+.main__plat img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-top: 15px;
+  width: 100%;
+  height: 300px;
+}
+
+.all {
+  display: flex;
+}
+
+@media (min-width: 767px) {
+  .all {
+    justify-content: center;
+  }
+}
+/**** fond et titre ****/
+.ma__section {
+  background-color: whitesmoke;
+  position: absolute;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-top: -40px;
+  height: 175%;
+  width: 100%;
+  /***** Menu ****/
+}
+.ma__section .mon__titre {
+  display: flex;
+  padding-right: 50px;
+  justify-content: space-between;
+}
+.ma__section .mon__titre h1 {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: italic;
+  padding-left: 20px;
+}
+.ma__section .mon__titre .icon-container {
+  cursor: pointer;
+  bottom: 15px;
+}
+.ma__section .mon__titre .icon-container .icon-change {
+  display: none;
+}
+.ma__section .mon__titre .icon-container .icon {
+  font-size: 20px;
+  top: 27px;
+  position: absolute;
+  transition: opacity 0.3s;
+}
+.ma__section .mon__titre .icon-container .icon-1 {
+  opacity: 1;
+}
+.ma__section .mon__titre .icon-container .icon-2 {
+  opacity: 0;
+}
+.ma__section .mon__titre .icon-container .icon-change:checked ~ .icon-1 {
+  opacity: 0;
+}
+.ma__section .mon__titre .icon-container .icon-change:checked ~ .icon-2 {
+  opacity: 1;
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (min-width: 767px) {
+  .ma__section .mon__titre {
+    justify-content: center;
+  }
+  .ma__section .icon-container .icon {
+    padding-left: 15px;
+  }
+}
+.ma__section .menu a {
+  color: inherit;
+  text-decoration: none;
+}
+.ma__section .menu .menu__entrees {
+  font-weight: 300;
+  font-size: medium;
+  display: flex;
+  width: 40px;
+  margin-left: 20px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #99E2D0;
+}
+.ma__section .menu__container {
+  cursor: pointer;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  filter: drop-shadow(1px 1px 5px lightgrey);
+}
+.ma__section .menu__container .menu__description {
+  padding-left: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ma__section .menu__container .menu__description h3 {
+  margin: 0px;
+  margin-top: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ma__section .menu__container .menu__description p {
+  margin: 0px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ma__section .menu__container .menu__prix {
+  margin-top: 20px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+.ma__section .menu__container::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f058";
+  font-weight: 900;
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  right: 0px;
+  background-color: #99E2D0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 28px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 200ms;
+}
+.ma__section .menu__container:hover::before {
+  transform: scaleX(1);
+}
+.ma__section .menu__container:hover {
+  padding-right: 70px;
+}
+.ma__section .menu__plats {
+  margin-top: 60px;
+  font-weight: 300;
+  font-size: medium;
+  display: flex;
+  width: 40px;
+  margin-left: 20px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #99E2D0;
+}
+
+@media (min-width: 767px) {
+  .ma__section {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  .menu {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+/**** Commander ****/
+.command__container {
+  display: flex;
+  justify-content: center;
+}
+.command__container .command__btn {
+  border-radius: 30px;
+  background: linear-gradient(1deg, #9356DC, #FF79DA);
+  padding: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 30px;
+  font-size: large;
+  color: white;
+  text-decoration: none;
+  filter: drop-shadow(1px 1px 5px grey);
+  transition: filter 0.8s ease;
+}
+.command__container .command__btn::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: -5%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+  transition: all 0.8s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+.command__container .command__btn:hover::before {
+  opacity: 1;
+}
+.command__container .command__btn:hover {
+  filter: drop-shadow(1px 1px 5px black);
+}
+
+/*** Footer ***/
+footer {
+  background-color: #353535;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  position: relative;
+  top: 80em;
+}
+footer .footer__container img {
+  width: 100px;
+  padding-top: 15px;
+  padding-left: 37px;
+  filter: invert(1) brightness(2);
+}
+footer .footer__container ul {
+  list-style-type: none;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+footer .footer__container ul .fa-utensils {
+  padding-right: 17px;
+}
+footer .footer__container ul .fa-handshake-angle {
+  padding-right: 10px;
+}
+footer .footer__container ul .footer__liste {
+  font-weight: 300;
+}
+footer .footer__container ul a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (min-width: 767px) {
+  footer {
+    padding-top: 129px;
+  }
+  footer .footer__container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  footer .footer__container img {
+    width: 100px;
+    height: 20px;
+    padding-right: 30px;
+  }
+  footer .footer__container ul {
+    display: flex;
+  }
+}/*# sourceMappingURL=restaurants.css.map */
