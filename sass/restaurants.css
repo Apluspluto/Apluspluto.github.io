@@ -82,10 +82,10 @@ Header .header__container .header__logo {
 .ma__section .mon__titre .icon-container .icon-2 {
   opacity: 0;
 }
-.ma__section .mon__titre .icon-container .icon-change:checked ~ .icon-1 {
+.ma__section .mon__titre .icon-container .icon-1:hover {
   opacity: 0;
 }
-.ma__section .mon__titre .icon-container .icon-change:checked ~ .icon-2 {
+.ma__section .mon__titre .icon-container .icon-2:hover {
   opacity: 1;
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
@@ -164,7 +164,7 @@ Header .header__container .header__logo {
   padding: 28px;
   transform-origin: right;
   transform: scaleX(0);
-  transition: transform 200ms;
+  transition: transform 120ms;
 }
 .ma__section .menu__container:hover::before {
   transform: scaleX(1);
