@@ -32,7 +32,7 @@ Header {
 
 /*** Image et contenus ***/
 
-.main__plat {
+.photo__plat {
 
     img {
         object-fit: cover;
@@ -62,11 +62,10 @@ Header {
 
 .ma__section {
     background-color: whitesmoke;
-    position: absolute;
+    position: relative;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     margin-top: -40px;
-    height: 190%;
     width: 100%;
 
 .mon__titre {
@@ -268,6 +267,7 @@ Header {
     padding-left: 50px;
     padding-right: 50px;
     margin-top: 30px;
+    margin-bottom: 40px;
     font-size: large;
     color: white;
     text-decoration: none;
@@ -305,8 +305,6 @@ footer {
     background-color: #353535;
     padding-top: 1px;
     padding-bottom: 1px;
-    position: relative;
-    top: 87em;
 
     .footer__container {
 
