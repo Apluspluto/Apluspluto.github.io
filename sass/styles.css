@@ -257,6 +257,7 @@ Header .fa-location-dot {
 }
 .resto .resto__container .resto__cards {
   display: flex;
+  position: relative;
   flex-direction: column;
   background-color: white;
   border-radius: 20px;
@@ -265,7 +266,7 @@ Header .fa-location-dot {
 .resto .resto__container .resto__cards .resto__new {
   position: absolute;
   color: #008766;
-  right: 60px;
+  right: 30px;
   border-radius: 3px;
   background-color: #99E2D0;
   padding: 4px;
