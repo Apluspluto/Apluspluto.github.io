@@ -16,18 +16,26 @@ body {
     border: 5px solid #f3f3f3; /* Couleur de fond */
     border-top: 5px solid #e13ac0; /* Couleur de l'animation */
     border-radius: 50%;
-    animation: spin 1s linear infinite, hideLoader 2s forwards; /* 3s correspond au délai */
+    animation: spin 1s linear infinite, hideLoader 2s forwards; /* 2s correspond au délai */
     transform: translate(-50%, -50%); /* Centrer le loader */
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% { 
+       transform: rotate(0deg); 
+    }
+    100% { 
+        transform: rotate(360deg); 
+    }
 }
 
 @keyframes hideLoader {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
+    0% { 
+        opacity: 1; 
+    }
+    100% { 
+        opacity: 0; 
+    }
 }
 
 .content {
@@ -36,8 +44,12 @@ body {
 }
 
 @keyframes showContent {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0; 
+    }
+    100% { 
+        opacity: 1; 
+    }
 }
 
 /*** Header **/
