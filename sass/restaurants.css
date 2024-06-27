@@ -190,6 +190,7 @@ Header .header__container .header__logo {
 }
 .ma__section .menu__container:hover {
   padding-right: 70px;
+  transition: padding-right 140ms;
 }
 
 @keyframes loader-menu {

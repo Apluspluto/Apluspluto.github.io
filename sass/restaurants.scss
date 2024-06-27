@@ -230,6 +230,7 @@ Header {
  
    .menu__container:hover {
     padding-right: 70px;
+    transition: padding-right 140ms;
    }
 }
 
