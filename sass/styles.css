@@ -261,12 +261,8 @@ Header .fa-location-dot {
 }
 .resto .resto__container .icon-container {
   display: inline-block;
-  cursor: pointer;
   position: relative;
   bottom: 15px;
-}
-.resto .resto__container .icon-container .icon-change {
-  display: none;
 }
 .resto .resto__container .icon-container .icon {
   font-size: 20px;

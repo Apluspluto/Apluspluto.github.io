@@ -336,14 +336,9 @@ Header {
 
     .icon-container {
         display: inline-block;
-        cursor: pointer;
         position: relative;
         bottom: 15px;
-      
-        .icon-change {
-          display: none;
-        }
-      
+    
         .icon {
           font-size: 20px; 
           position: absolute;
