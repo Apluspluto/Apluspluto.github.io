@@ -70,11 +70,25 @@ Header {
         background-color: #EAEAEA;
         box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.3);
         margin-top: 10px;
+        padding: 17px;
+
+
+    input {
+        border: none;
+        outline: none;
+        background-color: #EAEAEA;
+    }
+
+    input::placeholder {
+        color: black;
+        font-size: medium;
+    }
+
     }
 
     .fa-location-dot {
-        margin-top: 16px;
         margin-right: 10px;
+        margin-left: 40px;
     }
 }
 
@@ -221,15 +235,7 @@ Header {
 
 }
 
-.fonction__etapes:hover {
-
-    .fa-tablet-screen-button {
-        color: #9356DC;
-    }
-
-    .fa-list {
-        color: #9356DC;
-    }
+.fonction__etapes {
 
     .fa-store {
         color: #9356DC;
