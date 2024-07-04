@@ -66,9 +66,6 @@ Header .header__container .header__logo {
   cursor: pointer;
   bottom: 15px;
 }
-.ma__section .mon__titre .icon-container .icon-change {
-  display: none;
-}
 .ma__section .mon__titre .icon-container .icon {
   font-size: 20px;
   top: 27px;
